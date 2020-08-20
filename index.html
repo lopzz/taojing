@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<title>淘京网</title>
+	<link rel="stylesheet" type="text/css" href="css/base.css">
+	<link rel="stylesheet" type="text/css" href="css/common.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css"/>
+</head>
+<body>
+	
+	<div class="nav-site">
+		<div class="container">
+			<ul class="fl">
+				<li class="fl"><a href="javascript:;" class="nav-site-login">亲，请登录</a></li>
+				<li class="fl"><a href="javascript:;" class="nav-site-signup link">免费注册</a></li>
+				<li class="fl"><a href="###" target="_blank" class="nav-site-mobile link">手机逛淘京</a></li>
+			</ul>
+			<ul class="fr">
+				<li class="menu dropdown fl" data-active="menu">
+					<a href="###" target="_blank" class="dropdown-toggle link transition">我的淘京<i class="dropdown-arrow icon transition">&#xe614;</i></a>
+					<ul class="dropdown-layer dropdown-left">
+						<li><a href="###" target="_blank" class="menu-item">已买到的宝贝</a></li>
+						<li><a href="###" target="_blank" class="menu-item">我的足迹</a></li>
+					</ul> 
+				</li>
+				<li class="menu dropdown fl" data-active="menu">
+					<a href="###" target="_blank" class="dropdown-toggle link transition">收藏夹<i class="dropdown-arrow icon transition">&#xe614;</i></a>
+					<ul class="dropdown-layer dropdown-left">
+						<li><a href="###" target="_blank" class="menu-item">收藏的宝贝</a></li>
+						<li><a href="###" target="_blank" class="menu-item">收藏的店铺</a></li>
+					</ul>
+				</li>
+				<li class="fl">
+					<a href="###" target="_blank" class="nav-site-category link transition">商品分类</a>
+				</li>
+				<li class="menu dropdown fl" data-active="menu" data-load="js/dropdown-seller.json">
+					<a href="###" target="_blank" class="dropdown-toggle link transition">卖家中心<i class="dropdown-arrow icon transition">&#xe614;</i></a>
+					<ul class="dropdown-layer dropdown-left">
+						<li class="dropdown-loading"></li>
+					<!-- 	<li><a href="###" target="_blank" class="menu-item">免费开店</a></li>
+						<li><a href="###" target="_blank" class="menu-item">已卖出的宝贝</a></li>
+						<li><a href="###" target="_blank" class="menu-item">出售中的宝贝</a></li>
+						<li><a href="###" target="_blank" class="menu-item">卖家服务市场</a></li>
+						<li><a href="###" target="_blank" class="menu-item">卖家培训中心</a></li>
+						<li><a href="###" target="_blank" class="menu-item">体验中心</a></li> -->
+					</ul>
+				</li>
+				<li class="nav-site-service menu dropdown fl" data-active="menu">
+					<a href="###" target="_blank" class="dropdown-toggle link transition">联系客服<i class="dropdown-arrow icon transition">&#xe614;</i></a>
+					<ul class="dropdown-layer dropdown-right">
+						<li><a href="###" target="_blank" class="menu-item">消费者客服</a></li>
+						<li><a href="###" target="_blank" class="menu-item">卖家客服</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="header">
+		<div class="container">
+			<h1 class="fl"><a href="./index.html" class="header-logo text-hidden">淘京网</a></h1>
+			<div id="header-search" class="search fl">
+				<form action="https://s.taobao.com/search" target="_blank" class="search-form">
+					<input type="text" name="q" placeholder="灵魂美食一元抢" autocomplete="off" class="search-inputbox fl">
+					<input type="submit" value="搜索" class="search-btn fl">
+				</form>
+				<ul class="search-layer">
+				<!-- 	<li class="search-layer-item text-ellipsis">111</li>
+					<li class="search-layer-item text-ellipsis">111</li>
+					<li class="search-layer-item text-ellipsis">111</li> -->
+				</ul>
+			</div>
+			<div class="cart cart-dropdown fr">
+				<div class="cart-box transition" data-active="cart">
+					<a href="###" class="dropdown-toggle transition"><i class="icon">&#xf0179;</i>&nbsp;&nbsp;&nbsp;&nbsp;购物车&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;0&nbsp;&nbsp;<i class="dropdown-arrow icon transition">&#xe614;</i></a>
+				</div>
+				<ul class="dropdown-layer cart-layer">
+					<p class="new-item">最新加入的商品</p>
+					<li>
+						<a href="###" target="_blank" class="cart-item">
+							<img src="img/cart/cart-item1.png" class="cart-item-pic fl">
+							<div class="cart-item-detail fl">
+								<span class="cart-item-detail-desc text-ellipsis">adidas 阿迪达斯 训练 男子</span>
+								<span class="cart-item-detail-price" >￥ 335 × 1</span>	
+							</div>
+							<i class="icon">&#xe61d;</i>
+						</a>
+					</li>
+					<li>
+						<a href="###" target="_blank" class="cart-item">
+							<img src="img/cart/cart-item2.png" class="cart-item-pic fl">
+							<div class="cart-item-detail fl">
+								<span class="cart-item-detail-desc text-ellipsis">玉兰油多效修护三部曲</span>
+								<span class="cart-item-detail-price" >￥ 199 × 2</span>
+							</div>
+							<i class="icon fr">&#xe61d;</i>
+						</a>
+					</li>
+					<li>
+						<a href="###" target="_blank" class="cart-item">
+							<img src="img/cart/cart-item3.png" class="cart-item-pic fl">
+							<div class="cart-item-detail fl">
+								<span class="cart-item-detail-desc text-ellipsis">Apple iPhone11</span>
+								<span class="cart-item-detail-price">￥ 5499 × 1</span>
+							</div>
+							<i class="icon fr">&#xe61d;</i>
+						</a>
+					</li>
+					<li>
+						<a href="###" target="_blank" class="cart-item">
+							<img src="img/cart/cart-item4.png" class="cart-item-pic fl">
+							<div class="cart-item-detail fl">
+								<span class="cart-item-detail-desc text-ellipsis">Dell戴尔XPS15 2020款十代酷睿i7</span>
+								<span class="cart-item-detail-price">￥ 15499 × 1</span>
+							</div>
+							<i class="icon fr">&#xe61d;</i>
+						</a>
+					</li>
+					<li>
+						<a href="###" target="_blank" class="cart-item">
+							<img src="img/cart/cart-item5.png" class="cart-item-pic fl">
+							<div class="cart-item-detail fl">
+								<span class="cart-item-detail-desc text-ellipsis">三只松鼠 夏威夷果160g奶油味休闲零食特产每日坚果干果</span>
+								<span class="cart-item-detail-price">￥ 36.9 × 4</span>
+							</div>
+							<i class="icon fr">&#xe61d;</i>
+						</a>
+					</li>
+					<p class="total">共5件商品&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;共计￥21878.6</p>
+				</ul>
+			</div>
+		</div>
+	</div>
+	
+	<div class="nav-main">
+		<div class="container">
+			<a href="###" target="_blank" class="link">数码城</a
+			><a href="###" target="_blank" class="link">超市</a
+			><a href="###" target="_blank" class="link">团购</a
+			><a href="###" target="_blank" class="link">发现</a
+			><a href="###" target="_blank" class="link">二手特价</a
+			><a href="###" target="_blank" class="link">名品汇</a>
+		</div>
+	</div>
+
+	<div class="focus">
+		<div class="container">
+			<div id="focus-category" class="category fl">
+				<a href="###" target="_blank" class="category-title"><i class="icon">&#xe6a3;</i>商品分类</a>
+				<ul class="category-list">
+					<li class="dropdown" data-active="category" data-load="js/category-detail-1.json">
+						<div class="dropdown-toggle">
+							<a href="###" target="_blank" class="dropdown-link">家用电器</a>
+							<i class="dropdown-arrow">&gt;</i>
+						</div>
+						<div class="dropdown-layer">
+							<div class="dropdown-loading"></div>
+						</div>
+					</li>
+					<li class="dropdown" data-active="category" data-load="js/category-detail-1.json">
+						<div class="dropdown-toggle">
+							<a href="###" target="_blank" class="dropdown-link">手机、运营商、数码</a>
+							<i class="dropdown-arrow">&gt;</i>
+						</div>
+						<div class="dropdown-layer">
+							<div class="dropdown-loading"></div>
+						</div>
+					</li>
+					<li class="dropdown" data-active="category" data-load="js/category-detail-1.json">
+						<div class="dropdown-toggle">
+							<a href="###" target="_blank" class="dropdown-link">电脑、办公</a>
+							<i class="dropdown-arrow">&gt;</i>
+						</div>
+						<div class="dropdown-layer">
+							<div class="dropdown-loading"></div>
+						</div>
+					</li>
+					<li class="dropdown" data-active="category" data-load="js/category-detail-1.json">
+						<div class="dropdown-toggle">
+							<a href="###" target="_blank" class="dropdown-link">家居、家具、家装、厨具</a>
+							<i class="dropdown-arrow">&gt;</i>
+						</div>
+						<div class="dropdown-layer">
+							<div class="dropdown-loading"></div>
+						</div>
+					</li>
+					<li class="dropdown" data-active="category" data-load="js/category-detail-1.json">
+						<div class="dropdown-toggle">
+							<a href="###" target="_blank" class="dropdown-link">男装、女装、童装、内衣</a>
+							<i class="dropdown-arrow">&gt;</i>
+						</div>
+						<div class="dropdown-layer">
+							<div class="dropdown-loading"></div>
+						</div>
+					</li>
+					<li class="dropdown" data-active="category" data-load="js/category-detail-1.json">
+						<div class="dropdown-toggle">
+							<a href="###" target="_blank" class="dropdown-link">化妆、清洁、宠物</a>
+							<i class="dropdown-arrow">&gt;</i>
+						</div>
+						<div class="dropdown-layer">
+							<div class="dropdown-loading"></div>
+						</div>
+					</li>
+					<li class="dropdown" data-active="category" data-load="js/category-detail-1.json">
+						<div class="dropdown-toggle">
+							<a href="###" target="_blank" class="dropdown-link">运动户外、钟表</a>
+							<i class="dropdown-arrow">&gt;</i>
+						</div>
+						<div class="dropdown-layer">
+							<div class="dropdown-loading"></div>
+						</div>
+					</li>
+					<li class="dropdown" data-active="category" data-load="js/category-detail-1.json">
+						<div class="dropdown-toggle">
+							<a href="###" target="_blank" class="dropdown-link">汽车、汽车用品</a>
+							<i class="dropdown-arrow">&gt;</i>
+						</div>
+						<div class="dropdown-layer">
+							<div class="dropdown-loading"></div>
+						</div>
+					</li>
+					<li class="dropdown" data-active="category" data-load="js/category-detail-1.json">
+						<div class="dropdown-toggle">
+							<a href="###" target="_blank" class="dropdown-link">母婴、玩具乐器</a>
+							<i class="dropdown-arrow">&gt;</i>
+						</div>
+						<div class="dropdown-layer">
+							<div class="dropdown-loading"></div>
+						</div>
+					</li>
+					<li class="dropdown" data-active="category" data-load="js/category-detail-1.json">
+						<div class="dropdown-toggle">
+							<a href="###" target="_blank" class="dropdown-link">食品、酒类、生鲜、特产</a>
+							<i class="dropdown-arrow">&gt;</i>
+						</div>
+						<div class="dropdown-layer">
+							<div class="dropdown-loading"></div>
+						</div>
+					</li>
+					<li class="dropdown" data-active="category" data-load="js/category-detail-1.json">
+						<div class="dropdown-toggle">
+							<a href="###" target="_blank" class="dropdown-link">医药保健</a>
+							<i class="dropdown-arrow">&gt;</i>
+						</div>
+						<div class="dropdown-layer">
+							<div class="dropdown-loading"></div>
+						</div>
+					</li>
+					<li class="dropdown" data-active="category" data-load="js/category-detail-1.json">
+						<div class="dropdown-toggle">
+							<a href="###" target="_blank" class="dropdown-link">图书、音像、电子书</a>
+							<i class="dropdown-arrow">&gt;</i>
+						</div>
+						<div class="dropdown-layer">
+							<div class="dropdown-loading"></div>
+						</div>
+					</li>
+					<li class="dropdown" data-active="category" data-load="js/category-detail-1.json">
+						<div class="dropdown-toggle">
+							<a href="###" target="_blank" class="dropdown-link">彩票、旅行、充值、票务</a>
+							<i class="dropdown-arrow">&gt;</i>
+						</div>
+						<div class="dropdown-layer">
+							<div class="dropdown-loading"></div>
+						</div>
+					</li>
+					<li class="dropdown" data-active="category" data-load="js/category-detail-1.json">
+						<div class="dropdown-toggle">
+							<a href="###" target="_blank" class="dropdown-link">理财、众筹、白条、保险</a>
+							<i class="dropdown-arrow">&gt;</i>
+						</div>
+						<div class="dropdown-layer">
+							<div class="dropdown-loading"></div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div id="focus-slider" class="slider fl">
+				<div class="slider-container">
+					<div class="slider-item">
+						<a href="###" target="_blank"><img src="img/focus-slider/loading.gif" data-src="img/focus-slider/1.png" alt="" class="slider-img"></a>
+					</div>
+					<div class="slider-item">
+						<a href="###" target="_blank"><img src="img/focus-slider/loading.gif" data-src="img/focus-slider/2.png" alt="" class="slider-img"></a>
+					</div>
+					<div class="slider-item">
+						<a href="###" target="_blank"><img src="img/focus-slider/loading.gif" data-src="img/focus-slider/3.png" alt="" class="slider-img"></a>
+					</div>
+					<div class="slider-item">
+						<a href="###" target="_blank"><img src="img/focus-slider/loading.gif" data-src="img/focus-slider/4.png" alt="" class="slider-img"></a>
+					</div>
+				</div>
+				<ol class="slider-indicator-wrap">
+					<li class="slider-indicator text-hidden fl">1</li>
+					<li class="slider-indicator text-hidden fl">2</li>
+					<li class="slider-indicator text-hidden fl">3</li>
+					<li class="slider-indicator text-hidden fl">4</li>
+				</ol>
+				<a href="javascript:;" class="slider-control slider-control-left">&lt;</a>
+				<a href="javascript:;" class="slider-control slider-control-right">&gt;</a>
+			</div>
+			<div class="focus-sidebar fr">
+				<div class="focus-news">
+					<div class="focus-news-head">
+						<h2 class="focus-news-title fl">快报</h2>
+						<a href="###" target="_blank" class="link fr">更多&gt;</a>
+					</div>
+					<div class="focus-news-body">
+						<p class="text-ellipsis">
+							<a href="###" target="_blank" class="link"><strong>[特惠]</strong>精选图书每满150减50</a>
+						</p>
+						<p class="text-ellipsis">
+							<a href="###" target="_blank" class="link"><strong>[公告]</strong>因广州图书仓搬仓升级配送延迟因广州图书仓搬仓升级配送延迟</a>
+						</p>
+						<p class="text-ellipsis">
+							<a href="###" target="_blank" class="link"><strong>[特惠]</strong>爆款手机12期免息 抽奖赢电视</a>
+						</p>
+						<p class="text-ellipsis">
+							<a href="###" target="_blank" class="link"><strong>[公告]</strong>广州、福建受台风影响配送延迟</a>
+						</p>
+						<p class="text-ellipsis">
+							<a href="###" target="_blank" class="link"><strong>[特惠]</strong>大闸蟹领券满399减180</a>
+						</p>
+					</div>
+				</div>
+				<div class="focus-service cf">
+					<a href="###" target="_blank" class="focus-service-item fl">
+						<i class="icon focus-service-icon">&#xe638;</i>
+						<span class="focus-service-text">话费</span>
+					</a>
+					<a href="###" target="_blank" class="focus-service-item fl">
+						<i class="icon focus-service-icon">&#xe686;</i>
+						<span class="focus-service-text">机票</span>
+					</a>
+					<a href="###" target="_blank" class="focus-service-item fl">
+						<i class="icon focus-service-icon">&#xe6c2;</i>
+						<span class="focus-service-text">电影票</span>
+					</a>
+					<a href="###" target="_blank" class="focus-service-item fl">
+						<i class="icon focus-service-icon">&#xe680;</i>
+						<span class="focus-service-text">游戏</span>
+					</a>
+					<a href="###" target="_blank" class="focus-service-item fl">
+						<i class="icon focus-service-icon">&#xe611;</i>
+						<span class="focus-service-text">彩票</span>
+					</a>
+					<a href="###" target="_blank" class="focus-service-item fl">
+						<i class="icon focus-service-icon">&#xe63a;</i>
+						<span class="focus-service-text">加油卡</span>
+					</a>
+					<a href="###" target="_blank" class="focus-service-item fl">
+						<i class="icon focus-service-icon">&#xe674;</i>
+						<span class="focus-service-text">酒店</span>
+					</a>
+					<a href="###" target="_blank" class="focus-service-item fl">
+						<i class="icon focus-service-icon">&#xe8d8;</i>
+						<span class="focus-service-text">火车票</span>
+					</a>
+					<a href="###" target="_blank" class="focus-service-item fl">
+						<i class="icon focus-service-icon">&#xe810;</i>
+						<span class="focus-service-text">众筹</span>
+					</a>
+					<a href="###" target="_blank" class="focus-service-item fl">
+						<i class="icon focus-service-icon">&#xe63d;</i>
+						<span class="focus-service-text">理财</span>
+					</a>
+					<a href="###" target="_blank" class="focus-service-item fl">
+						<i class="icon focus-service-icon">&#xe61c;</i>
+						<span class="focus-service-text">礼品卡</span>
+					</a>
+					<a href="###" target="_blank" class="focus-service-item fl">
+						<i class="icon focus-service-icon">&#xe61a;</i>
+						<span class="focus-service-text">白条</span>
+					</a>
+				</div>
+				<div class="focus-ad"></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="todays">
+		<div class="container">
+			<div id="todays-slider" class="slider">
+				<div class="slider-container">
+					<div class="slider-item">
+						<a href="###" target="_blank" class="fl"><img src="img/todays-slider/loading.gif" data-src="img/todays-slider/1.png" alt="" class="slider-img"></a>
+						<a href="###" target="_blank" class="fl"><img src="img/todays-slider/loading.gif" data-src="img/todays-slider/2.png" alt="" class="slider-img"></a>
+						<a href="###" target="_blank" class="fl"><img src="img/todays-slider/loading.gif" data-src="img/todays-slider/3.png" alt="" class="slider-img"></a>
+						<a href="###" target="_blank" class="fl"><img src="img/todays-slider/loading.gif" data-src="img/todays-slider/4.png" alt="" class="slider-img"></a>
+						<a href="###" target="_blank" class="fl"><img src="img/todays-slider/loading.gif" data-src="img/todays-slider/5.png" alt="" class="slider-img"></a>
+					</div>
+					<div class="slider-item">
+						<a href="###" target="_blank" class="fl"><img src="img/todays-slider/loading.gif" data-src="img/todays-slider/6.png" alt="" class="slider-img"></a>
+						<a href="###" target="_blank" class="fl"><img src="img/todays-slider/loading.gif" data-src="img/todays-slider/7.png" alt="" class="slider-img"></a>
+						<a href="###" target="_blank" class="fl"><img src="img/todays-slider/loading.gif" data-src="img/todays-slider/8.png" alt="" class="slider-img"></a>
+						<a href="###" target="_blank" class="fl"><img src="img/todays-slider/loading.gif" data-src="img/todays-slider/9.png" alt="" class="slider-img"></a>
+						<a href="###" target="_blank" class="fl"><img src="img/todays-slider/loading.gif" data-src="img/todays-slider/10.png" alt="" class="slider-img"></a>
+					</div>
+					<div class="slider-item">
+						<a href="###" target="_blank" class="fl"><img src="img/todays-slider/loading.gif" data-src="img/todays-slider/11.png" alt="" class="slider-img"></a>
+						<a href="###" target="_blank" class="fl"><img src="img/todays-slider/loading.gif" data-src="img/todays-slider/12.png" alt="" class="slider-img"></a>
+						<a href="###" target="_blank" class="fl"><img src="img/todays-slider/loading.gif" data-src="img/todays-slider/13.png" alt="" class="slider-img"></a>
+						<a href="###" target="_blank" class="fl"><img src="img/todays-slider/loading.gif" data-src="img/todays-slider/14.png" alt="" class="slider-img"></a>
+						<a href="###" target="_blank" class="fl"><img src="img/todays-slider/loading.gif" data-src="img/todays-slider/15.png" alt="" class="slider-img"></a>
+					</div>
+				</div>
+				<a href="javascript:;" class="slider-control slider-control-left">&lt;</a>
+				<a href="javascript:;" class="slider-control slider-control-right">&gt;</a>
+			</div>
+		</div>
+	</div>
+	
+	<!-- floor-1 -->
+	<div class="floor">
+		<div class="container">
+			<img src="img/floor-loading.gif" alt="">
+			<!-- <div class="floor-head">
+				<h2 class="floor-title fl">
+					<span class="floor-title-num">1F</span>
+					<span class="floor-title-text">服装鞋包</span>
+				</h2>
+				<ul class="tab-item-wrap fr">
+					<li class="fl"><a href="javascript:;" class="tab-item tab-item-active">大牌</a></li>
+					<li class="floor-divider fl text-hidden">分割线</li>
+					<li class="fl"><a href="javascript:;" class="tab-item">男装</a></li>
+					<li class="floor-divider fl text-hidden">分割线</li>
+					<li class="fl"><a href="javascript:;" class="tab-item">女装</a></li>
+				</ul>
+			</div>
+			<div class="floor-body">
+				<ul class="tab-panel">
+					<li class="floor-item fl">
+						<p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/loading.gif" class="floor-img" data-src="img/floor/1/1/1.png" alt=""></a></p>
+						<p class="floor-item-name"><a href="###" target="_blank" class="link">吉普男士2020透气运动套装</a></p>
+						<p class="floor-item-price">￥229</p>
+					</li>
+					<li class="floor-item fl">
+						<p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/loading.gif" class="floor-img" data-src="img/floor/1/1/2.png" alt=""></a></p>
+						<p class="floor-item-name"><a href="###" target="_blank" class="link">2020夏装新款哈伦裤九分裤</a></p>
+						<p class="floor-item-price">￥39.9</p>
+					</li>
+					<li class="floor-item fl">
+						<p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/loading.gif" class="floor-img" data-src="img/floor/1/1/3.png" alt=""></a></p>
+						<p class="floor-item-name"><a href="###" target="_blank" class="link">夏季速干休闲运动两件套跑步服</a></p>
+						<p class="floor-item-price">￥38</p>
+					</li>
+					<li class="floor-item fl">
+						<p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/loading.gif" class="floor-img" data-src="img/floor/1/1/4.png" alt=""></a></p>
+						<p class="floor-item-name"><a href="###" target="_blank" class="link">乐拖家居拖鞋</a></p>
+						<p class="floor-item-price">￥16.9</p>
+					</li>
+					<li class="floor-item fl">
+						<p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/loading.gif" class="floor-img" data-src="img/floor/1/1/5.png" alt=""></a></p>
+						<p class="floor-item-name"><a href="###" target="_blank" class="link">雅鹿男青年商务休闲衬衣</a></p>
+						<p class="floor-item-price">￥89</p>
+					</li>
+					<li class="floor-item fl">
+						<p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/loading.gif" class="floor-img" data-src="img/floor/1/1/6.png" alt=""></a></p>
+						<p class="floor-item-name"><a href="###" target="_blank" class="link">范思蓝恩夏季简约印花短袖T恤</a></p>
+						<p class="floor-item-price">￥99</p>
+					</li>
+					<li class="floor-item fl">
+						<p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/loading.gif" class="floor-img" data-src="img/floor/1/1/7.png" alt=""></a></p>
+						<p class="floor-item-name"><a href="###" target="_blank" class="link">乔丹新款男装运动裤五分裤短裤</a></p>
+						<p class="floor-item-price">￥58</p>
+					</li>
+					<li class="floor-item fl">
+						<p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/loading.gif" class="floor-img" data-src="img/floor/1/1/8.png" alt=""></a></p>
+						<p class="floor-item-name"><a href="###" target="_blank" class="link">蔻驰女士PVC手提单肩托特包</a></p>
+						<p class="floor-item-price">￥2480</p>
+					</li>
+					<li class="floor-item fl">
+						<p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/loading.gif" class="floor-img" data-src="img/floor/1/1/9.png" alt=""></a></p>
+						<p class="floor-item-name"><a href="###" target="_blank" class="link">回力一脚蹬男鞋</a></p>
+						<p class="floor-item-price">￥79</p>
+					</li>
+					<li class="floor-item fl">
+						<p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/loading.gif" class="floor-img" data-src="img/floor/1/1/10.png" alt=""></a></p>
+						<p class="floor-item-name"><a href="###" target="_blank" class="link">南极人短袖t恤</a></p>
+						<p class="floor-item-price">￥258</p>
+					</li>
+					<li class="floor-item fl">
+						<p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/loading.gif" class="floor-img" data-src="img/floor/1/1/11.png" alt=""></a></p>
+						<p class="floor-item-name"><a href="###" target="_blank" class="link">短袖中长款t恤裙女打底衫</a></p>
+						<p class="floor-item-price">￥98</p>
+					</li>
+					<li class="floor-item fl">
+						<p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/loading.gif" class="floor-img" data-src="img/floor/1/1/12.png" alt=""></a></p>
+						<p class="floor-item-name"><a href="###" target="_blank" class="link">定制款5D舒适缓震透气休闲鞋</a></p>
+						<p class="floor-item-price">￥99</p>
+					</li>
+				</ul>
+				<ul class="tab-panel">
+					<li class="floor-item fl">
+						<p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/loading.gif" class="floor-img" data-src="img/floor/1/2/1.png" alt=""></a></p>
+						<p class="floor-item-name"><a href="###" target="_blank" class="link">瑞族公社夏季印花打底衫</a></p>
+						<p class="floor-item-price">￥68</p>
+					</li>
+					<li class="floor-item fl">
+						<p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/loading.gif" class="floor-img" data-src="img/floor/1/2/2.png" alt=""></a></p>
+						<p class="floor-item-name"><a href="###" target="_blank" class="link">尊尚鸟短袖T恤潮流短袖</a></p>
+						<p class="floor-item-price">￥68</p>
+					</li>
+					<li class="floor-item fl">
+						<p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/loading.gif" class="floor-img" data-src="img/floor/1/2/3.png" alt=""></a></p>
+						<p class="floor-item-name"><a href="###" target="_blank" class="link">宽松短袖男生纯色纯棉T恤</a></p>
+						<p class="floor-item-price">￥89</p>
+					</li>
+					<li class="floor-item fl">
+						<p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/loading.gif" class="floor-img" data-src="img/floor/1/2/4.png" alt=""></a></p>
+						<p class="floor-item-name"><a href="###" target="_blank" class="link">宽松纯色纯棉T恤五分袖</a></p>
+						<p class="floor-item-price">￥59</p>
+					</li>
+					<li class="floor-item fl">
+						<p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/loading.gif" class="floor-img" data-src="img/floor/1/2/5.png" alt=""></a></p>
+						<p class="floor-item-name"><a href="###" target="_blank" class="link">男半袖夏天五分袖打底衫上衣</a></p>
+						<p class="floor-item-price">￥87</p>
+					</li>
+					<li class="floor-item fl">
+						<p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/loading.gif" class="floor-img" data-src="img/floor/1/2/6.png" alt=""></a></p>
+						<p class="floor-item-name"><a href="###" target="_blank" class="link">2020休闲立领t恤修身打底衫</a></p>
+						<p class="floor-item-price">￥125</p>
+					</li>
+					<li class="floor-item fl">
+						<p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/loading.gif" class="floor-img" data-src="img/floor/1/2/7.png" alt=""></a></p>
+						<p class="floor-item-name"><a href="###" target="_blank" class="link">新品运动系列吸湿透气短裤</a></p>
+						<p class="floor-item-price">￥128</p>
+					</li>
+					<li class="floor-item fl">
+						<p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/loading.gif" class="floor-img" data-src="img/floor/1/2/8.png" alt=""></a></p>
+						<p class="floor-item-name"><a href="###" target="_blank" class="link">海澜之家前胸图案半袖短袖</a></p>
+						<p class="floor-item-price">￥78</p>
+					</li>
+					<li class="floor-item fl">
+						<p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/loading.gif" class="floor-img" data-src="img/floor/1/2/9.png" alt=""></a></p>
+						<p class="floor-item-name"><a href="###" target="_blank" class="link">凯恩坎普短袖T恤</a></p>
+						<p class="floor-item-price">￥69</p>
+					</li>
+					<li class="floor-item fl">
+						<p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/loading.gif" class="floor-img" data-src="img/floor/1/2/10.png" alt=""></a></p>
+						<p class="floor-item-name"><a href="###" target="_blank" class="link">海澜之家运动系列圆领短袖T恤</a></p>
+						<p class="floor-item-price">￥78</p>
+					</li>
+					<li class="floor-item fl">
+						<p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/loading.gif" class="floor-img" data-src="img/floor/1/2/11.png" alt=""></a></p>
+						<p class="floor-item-name"><a href="###" target="_blank" class="link">森成名品短袖t恤男士Polo衫</a></p>
+						<p class="floor-item-price">￥99</p>
+					</li>
+					<li class="floor-item fl">
+						<p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/loading.gif" class="floor-img" data-src="img/floor/1/2/12.png" alt=""></a></p>
+						<p class="floor-item-name"><a href="###" target="_blank" class="link">泉色短袖T恤男装夏季新款衣服</a></p>
+						<p class="floor-item-price">￥68</p>
+					</li>
+				</ul>
+				<ul class="tab-panel">
+					<li class="floor-item fl">
+						<p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/loading.gif" class="floor-img" data-src="img/floor/1/3/1.png" alt=""></a></p>
+						<p class="floor-item-name"><a href="###" target="_blank" class="link">欧莎OSA白色v领半袖上衣</a></p>
+						<p class="floor-item-price">￥189</p>
+					</li>
+					<li class="floor-item fl">
+						<p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/loading.gif" class="floor-img" data-src="img/floor/1/3/2.png" alt=""></a></p>
+						<p class="floor-item-name"><a href="###" target="_blank" class="link">棉麻韩版宽松显瘦休闲短袖</a></p>
+						<p class="floor-item-price">￥128</p>
+					</li>
+					<li class="floor-item fl">
+						<p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/loading.gif" class="floor-img" data-src="img/floor/1/3/3.png" alt=""></a></p>
+						<p class="floor-item-name"><a href="###" target="_blank" class="link">显瘦休闲中长碎花裙子</a></p>
+						<p class="floor-item-price">￥128</p>
+					</li>
+					<li class="floor-item fl">
+						<p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/loading.gif" class="floor-img" data-src="img/floor/1/3/4.png" alt=""></a></p>
+						<p class="floor-item-name"><a href="###" target="_blank" class="link">2020夏季新款韩版牛仔</a></p>
+						<p class="floor-item-price">￥138</p>
+					</li>
+					<li class="floor-item fl">
+						<p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/loading.gif" class="floor-img" data-src="img/floor/1/3/5.png" alt=""></a></p>
+						<p class="floor-item-name"><a href="###" target="_blank" class="link">碎花雪纺棉麻裙子</a></p>
+						<p class="floor-item-price">￥138</p>
+					</li>
+					<li class="floor-item fl">
+						<p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/loading.gif" class="floor-img" data-src="img/floor/1/3/6.png" alt=""></a></p>
+						<p class="floor-item-name"><a href="###" target="_blank" class="link">时尚潮港味小雏菊短裙</a></p>
+						<p class="floor-item-price">￥148</p>
+					</li>
+					<li class="floor-item fl">
+						<p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/loading.gif" class="floor-img" data-src="img/floor/1/3/7.png" alt=""></a></p>
+						<p class="floor-item-name"><a href="###" target="_blank" class="link">收腰显瘦高端过膝a字长裙</a></p>
+						<p class="floor-item-price">￥598</p>
+					</li>
+					<li class="floor-item fl">
+						<p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/loading.gif" class="floor-img" data-src="img/floor/1/3/8.png" alt=""></a></p>
+						<p class="floor-item-name"><a href="###" target="_blank" class="link">2020春夏季新款亚麻打底衫</a></p>
+						<p class="floor-item-price">￥89</p>
+					</li>
+					<li class="floor-item fl">
+						<p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/loading.gif" class="floor-img" data-src="img/floor/1/3/9.png" alt=""></a></p>
+						<p class="floor-item-name"><a href="###" target="_blank" class="link">夏两件套2020春夏新款大码</a></p>
+						<p class="floor-item-price">￥118</p>
+					</li>
+					<li class="floor-item fl">
+						<p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/loading.gif" class="floor-img" data-src="img/floor/1/3/10.png" alt=""></a></p>
+						<p class="floor-item-name"><a href="###" target="_blank" class="link">汉服收腰显瘦雪纺性感裙子</a></p>
+						<p class="floor-item-price">￥138</p>
+					</li>
+					<li class="floor-item fl">
+						<p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/loading.gif" class="floor-img" data-src="img/floor/1/3/11.png" alt=""></a></p>
+						<p class="floor-item-name"><a href="###" target="_blank" class="link">小个子碎花连衣裙蕾丝</a></p>
+						<p class="floor-item-price">￥149</p>
+					</li>
+					<li class="floor-item fl">
+						<p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/loading.gif" class="floor-img" data-src="img/floor/1/3/12.png" alt=""></a></p>
+						<p class="floor-item-name"><a href="###" target="_blank" class="link">范思蓝恩春秋新款雪纺白衬衫</a></p>
+						<p class="floor-item-price">￥169</p>
+					</li>
+				</ul>
+			</div> -->
+		</div>
+	</div>
+	<!-- floor-2 -->
+	<div class="floor">
+		<div class="container">
+			<img src="img/floor-loading.gif" alt="">
+		</div>
+	</div>
+	<!-- floor-3 -->
+	<div class="floor">
+		<div class="container">
+			<img src="img/floor-loading.gif" alt="">
+		</div>
+	</div>
+	<!-- floor-4 -->
+	<div class="floor">
+		<div class="container">
+			<img src="img/floor-loading.gif" alt="">
+		</div>
+	</div>
+	<!-- floor-5 -->
+	<div class="floor">
+		<div class="container">
+			<img src="img/floor-loading.gif" alt="">
+		</div>
+	</div>
+
+
+	<!-- elevator -->
+	<div id="elevator" class="elevator container">
+		<a href="javascript:;" class="elevator-item">
+			<span class="elevator-num">F1</span>
+			<span class="elevator-text">服饰</span>
+		</a>
+		<a href="javascript:;" class="elevator-item">
+			<span class="elevator-num">F2</span>
+			<span class="elevator-text">美妆</span>
+		</a>
+		<a href="javascript:;" class="elevator-item">
+			<span class="elevator-num">F3</span>
+			<span class="elevator-text">手机</span>
+		</a>
+		<a href="javascript:;" class="elevator-item">
+			<span class="elevator-num">F4</span>
+			<span class="elevator-text">家电</span>
+		</a>
+		<a href="javascript:;" class="elevator-item">
+			<span class="elevator-num">F5</span>
+			<span class="elevator-text">数码</span>
+		</a>
+	</div>
+
+	<!-- toolbar -->
+	<div class="toolbar">
+		<a href="javascript:;" class="toobar-item">
+			<i class="toolbar-icon icon">&#xe606;</i>
+			<span class="toolbar-text transition">会员</span>
+		</a>
+		<a href="javascript:;" class="toobar-item">
+			<i class="toolbar-icon icon">&#xe610;</i>
+			<span class="toolbar-text transition">购物车</span>
+		</a>
+		<a href="javascript:;" class="toobar-item">
+			<i class="toolbar-icon icon">&#xe64f;</i>
+			<span class="toolbar-text transition">我的关注</span>
+		</a>
+		<a href="javascript:;" class="toobar-item">
+			<i class="toolbar-icon icon">&#xe608;</i>
+			<span class="toolbar-text transition">我的消息</span>
+		</a>
+		<a href="javascript:;" id="backToTop" class="toobar-item">
+			<i class="toolbar-icon icon">&#xe658;</i>
+			<span class="toolbar-text transition">顶部</span>
+		</a>
+	</div>
+
+	
+	<div class="guarantee cf">
+		<div class="container">
+			<div class="guarantee-item-wrap">
+				<p class="guarantee-title">消费者保障</p>
+				<a href="###" class="guarantee-item link">保障范围</a>
+				<a href="###" class="guarantee-item link">退货退款流程</a>
+				<a href="###" class="guarantee-item link">服务中心</a>
+				<a href="###" class="guarantee-item link">更多特色服务</a>
+			</div>
+			<div class="guarantee-item-wrap">
+				<p class="guarantee-title">消费者保障</p>
+				<a href="###" class="guarantee-item link">新手专区</a>
+				<a href="###" class="guarantee-item link">消费警示</a>
+				<a href="###" class="guarantee-item link">交易安全</a>
+				<a href="###" class="guarantee-item link">24小时在线帮助</a>
+				<a href="###" class="guarantee-item link">免费开店</a>
+			</div>
+			<div class="guarantee-item-wrap">
+				<p class="guarantee-title">消费者保障</p>
+				<a href="###" class="guarantee-item link">快捷支付</a>
+				<a href="###" class="guarantee-item link">信用卡</a>
+				<a href="###" class="guarantee-item link">余额宝</a>
+				<a href="###" class="guarantee-item link">花呗</a>
+				<a href="###" class="guarantee-item link">货到付款</a>
+			</div>
+			<div class="guarantee-item-wrap">
+				<p class="guarantee-title">消费者保障</p>
+				<a href="###" class="guarantee-item link">手机淘宝</a>
+				<a href="###" class="guarantee-item link">淘宝信用</a>
+				<a href="###" class="guarantee-item link">大众评审</a>
+				<a href="###" class="guarantee-item link">更多服务</a>
+			</div>
+		</div>
+	</div>
+
+	<!-- footer -->
+	<div class="footer">
+		<div class="footer-container">
+			<div class="link">
+				<a href="###" class="link-item link">关于淘京</a>
+				<a href="###" class="link-item link">合作伙伴</a>
+				<a href="###" class="link-item link">营销中心</a>
+				<a href="###" class="link-item link">廉正举报</a>
+				<a href="###" class="link-item link">联系客服</a>
+				<a href="###" class="link-item link">开放平台</a>
+				<a href="###" class="link-item link">诚征英才</a>
+				<a href="###" class="link-item link">联系我们</a>
+				<a href="###" class="link-item link">网站地图</a>
+				<a href="###" class="link-item link">法律声明</a>
+				<a href="###" class="link-item link">知识产权</a>
+			</div>
+			<p class="statement">
+				&copy; 2020 taojing.com All Rights Reserved
+			</div>
+		</div>
+	</div>
+
+
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.js"></script> -->
+	<script>
+		window.jQuery||document.write('<script src="js/jquery-3.5.1.js"><\/script>');
+	</script>
+	<!-- <script src="js/jquery-3.5.1.js"></script> -->
+	<script src="js/transition.js"></script>
+	<script src="js/showHide.js"></script>
+	<script src="js/dropdown.js"></script>
+	<script src="js/search.js"></script>
+	<script src="js/move.js"></script>
+	<script src="js/slider.js"></script>
+	<script src="js/tab.js"></script>
+	<script src="js/index.js"></script>
+</body>
+</html>

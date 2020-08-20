@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>运动模块</title>
+	<link rel="stylesheet" href="../css/base.css">
+	<link rel="stylesheet" href="../css/common.css">
+	<style>
+		.box{
+			position: absolute;
+			left: 0;
+			top: 20px;
+			width: 200px;
+			height: 100px;
+			background-color: red;
+		}
+		.btns{
+			width: 100px;
+		}
+		#box2{
+			background-color: yellow;
+			left: 200px;
+		}	
+		.slider{
+			overflow:hidden;
+			position: relative;
+			width: 200px;
+			height: 100px;
+			border:2px solid #ccc;
+			margin-left: 100px;
+		}
+		.box{
+			left: 0;
+			top: 0;
+		}
+		#box2{
+			left: 100%;
+		}
+		#back-btn{
+			margin-left: 100px;
+		}
+	</style>
+</head>
+<body>
+	<div class="slider">
+		<div id="box" class="box"></div>
+		<div id="box2" class="box"></div>
+	</div>
+	<button id="back-btn" class="btns">&lt;</button
+	><button id="go-btn" class="btns">&gt;</button>
+
+
+
+	<script src="../js/jquery-3.5.1.js"></script>
+	<script src="../js/transition.js"></script>
+	<script src="../js/move.js"></script>
+	<script>
+		var $box = $('#box'),
+			$box2 = $('#box2'),
+			$goBtn = $('#go-btn'),
+			$backBtn = $('#back-btn');
+
+		$box.on('move moved',function(e,$elem){
+			console.log(e.type);
+			console.log($elem);
+		})
+		$box.move({
+			css3:true,
+			js:false,
+		});
+		$box2.move({
+			css3:true,
+			js:false,
+		});
+		$goBtn.on('click',function(){
+			$box.move('x',-200);
+			$box2.move('x',0);
+		});
+		$backBtn.on('click',function(){
+			$box.move('x',0);
+			$box2.move('x',200);
+		});
+	</script>
+</body>
+</html>
